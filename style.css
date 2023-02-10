@@ -4,13 +4,17 @@ body {
     margin: 30px;
 }
 
+/* 
+repeat(how often, what) 
+3fr = maxwidth divided by 3
+*/
 .grid_container {
     background-color: #eee;
     margin: 0 auto;
     max-width: 900px;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .grid_container > div {
@@ -21,6 +25,21 @@ body {
     padding: 20px;
 }
 
+/* first number is the starting column, second is the span */
 .grid_container > div:nth-child(1) {
     grid-column: 1 / span 2;
+}
+
+.grid_container > div:nth-child(2) {
+    grid-column: span 3;
+}
+
+/* span 1 is the default value */
+.grid_container > div:nth-child(3) {
+    grid-column: span 1;
+}
+
+/* from wich colum to which column */
+.grid_container > div:nth-child(4) {
+    grid-column: 2 / 6;
 }
