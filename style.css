@@ -5,5 +5,13 @@ body {
 }
 
 .grid_container {
+    background-color: #eee;
+    margin: 0 auto;
+    max-width: 900px;
 
+    display: grid;
+}
+
+.grid_container > div {
+    background-color: #ccc;
 }
