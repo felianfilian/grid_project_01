@@ -43,3 +43,8 @@ repeat(how often, what)
 .grid_container > div:nth-child(4) {
     grid-column: 2 / 6;
 }
+
+/*  to large spans will be wrapped */
+.grid_container > div:nth-child(4) {
+    grid-column: span 3;
+}
